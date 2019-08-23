@@ -1,58 +1,45 @@
 ---
 layout: post
-title:  "Hello World! From Jekyll on GitHub Pages"
+title:  "SimonHowlader.github.io: Jekyll + GitHub Pages"
 date:   2019-08-22
 ---
-# Hello World from Jekyll + GitHub Pages
 
-In the next few weeks I will be rebuilding a few of my websites from the ground up. New hosts, new backends, and new frontends.
+## Background:
+I need a blog where I can document my progress for various web development projects. I've used WordPress and Ghost for a couple of other projects. They both have more features than I need. I've used hosting solutions such as nosupportlinuxhosting.com, FlyWheel, InMotionHosting, and Digital Ocean. I don't want to deal with hosting if I can avoid it. I just need a solution that let's me easily write blog posts, preferabbly in Markdown, has styling support via CSS, secure, and is relatively quick to load. Cheaper the better. The design of the overall website doesn not matter as long as the content is legible. After I have something like 30 posts I will work on the look of the website, for now something minimalist with Syntax highlighting would be sufficient. 
 
-Lately I've been blogging a bit for my tutoring website (simontutors.com) so I figured I'd start a blog on something a bit more personally interesting i.e. not business related. The purpose of this blog is for me to document my thought process as I go through my build steps. I want to be able to reflect on my decision making. I normally do this in a notebook but I seem to be able to get more words out when I'm typing.
 
 ## Requirements:
-- write in markdown
+- be able to write in markdown
 - be able to develop locally and also edit through a web browser
 - cheap as possible
-- decently fast without much, if any, configuration
+- relatively fast
 
 ## Solution:
-Since this is going to be about my web development/coding/programming projects I figured GitHub Pages would be perfect. And since its all going to be code related a GitHub.io wouldn't seem out of place either. So free hosting, free domain. #free.99
+Since this is going to be about my web development/coding/programming projects I figured GitHub Pages would be perfect. And since its all going to be code related a GitHub.io url wouldn't seem out of place either. So free hosting, free domain. #free.99
 
 GitHub Pages supports Jekyll and also builds/deploys it on their servers so I'm going to be using that as well. I used Jekyll a long time ago so I'm familiar with the file structure, so all I need is some boilerplate code to get started and customize after.
 
 ## Build steps:
-1. Make sure dependencies are installed
-    1. xcode-select --install
-    2. 
-2. Clone someones starter files because it's too much work to set it up all from scratch
-3. Change the styles to something of my tastes
+1. Make a GitHub repository named simonhowlader.github.io
+2. create a "\_config.yaml" file.
+3. '''
+title: SimonHowlader.github.io
+email: simon@simonhowlader.com
+description: >- # this means to ignore newlines until "baseurl:"
+  A blog for me to document my progress as I work on various web projects.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://simonhowlader.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  simonhowlader
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+'''
 4. About page
 5. Analytics
 
-
-1. Install jekkyk
-xcode-select --install
-
-2. Ruby install
-Ruby -v returns ruby 2.3.7p456 (2018-03-28 revision 63024) [universal.x86_64-darwin18]
-
-3. Install bundler sudo gem install bundler
-
-4. Cd desktop
-Mkdir simonhowlader.github.io
-Cd there
-Touch Gemfile
-
-
-
-
-
-
-
-
-
-Lately I've been blogging habit for my tutoring
- rebuild a few of my websites from the ground up.
 ##Background
 I currently have two websites that are both a work in progress. One is for an online course built on Wordpress and the LearnDash plugin and hosted on Flywheel. Another is a blog built on Ghost, which also used to be built on WordPress. I'm going back to WordPress but I will be combining both with a multisite configuration. One of them will also be using Gatsby.js and Netlify for the frontend. The past couple of weeks I have been researching to figure out the best webstack and I've had to do a lot of thinking about each project's requirements. The configuration is going to be complicated.
 
@@ -82,27 +69,6 @@ I'm refactoring a lot of my code and restarting a bunch of web development proje
 I want to start blogging about my various projects as I begin working with them. I want to document my thought
 
 
-Ruby version 2.4.0 or above, including all development headers (ruby version can be checked by running ruby -v)
-RubyGems (which you can check by running gem -v)
-GCC and Make (in case your system doesn’t have them installed, which you can check by running gcc -v,g++ -v and make -v in your system’s command line interface)
-
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# Install rbenv and ruby-build
-brew install rbenv
-
-# Setup rbenv integration to your shell
-rbenv init
-
-# Check your install
-curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-doctor | bash
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
 
 {% highlight ruby %}
 def print_hi(name)
@@ -111,9 +77,3 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
