@@ -22,7 +22,7 @@ GitHub Pages supports Jekyll and also builds/deploys it on their servers so I'm 
 ## Build steps:
 1. Make a GitHub repository named simonhowlader.github.io
 2. create a "\_config.yaml" file.
-3. '''
+3. ``` YML
 title: SimonHowlader.github.io
 email: simon@simonhowlader.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -31,12 +31,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://simonhowlader.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  simonhowlader
 
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-'''
+```
+
+
 4. About page
 5. Analytics
 
