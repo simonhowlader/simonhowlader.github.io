@@ -25,7 +25,7 @@ GitHub Pages supports Jekyll and also builds/deploys it on their servers so I'm 
 2. create a "\_config.yaml" file in the root directory
 > These are the configuration variables that Jekyll will refer to
 3. 
-``` YML
+``` YAML
 title: SimonHowlader.github.io
 email: simon@simonhowlader.com
 description: >- # this means to ignore newlines until "baseurl:"
