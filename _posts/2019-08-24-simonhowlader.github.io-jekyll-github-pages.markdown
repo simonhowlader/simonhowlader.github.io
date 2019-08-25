@@ -35,10 +35,12 @@ GitHub Pages officially supports Jekyll and also builds + deploys it on their se
 
 ## Build steps:
 **1. First I made a GitHub repository and named it simonhowlader.github.io**
+
 Naming a repository with your username followed by .github.io tells GitHub to process the respository through Jekyll and host it on GitHub pages
 
 **2. Next I created a "\_config.yaml" file in the root directory and set a theme variable to "minima"**
-> Minima is Jekyll's default theme. I like the minimalist design and it seems to almost exactly what I wanted my blog too look like. I will change the look of the website in the future, but for now this is sufficient. Since the theme is set to minima, Jekyll uses the default theme files (https://github.com/jekyll/minima). Any files or folders that I create will overwrite the minima files/folders of the same name.
+
+Minima is Jekyll's default theme. I like the minimalist design and it seems to almost exactly what I wanted my blog too look like. I will change the look of the website in the future, but for now this is sufficient. Since the theme is set to minima, Jekyll uses the default theme files (https://github.com/jekyll/minima). Any files or folders that I create will overwrite the minima files/folders of the same name.
  
 ``` YAML
 title: SimonHowlader.github.io
@@ -56,6 +58,7 @@ plugins:
  - jekyll-seo-tag
 ```
 
+
 **3. Next I created an index.md file with the following piece of code**
 
 ``` YAML
@@ -67,7 +70,9 @@ layout: home
 GitHub Pages requires an index.html file in order to know that the repository is meant to be hosted as a website. Jekyll will convert the index.md file into index.html file after processing it through the "home" layout of the minima theme.
 
 **4. I then created an about page by creating a file named about.md.**
+
 Jekyll converts markdown files to html files through the use of kramdown.
 
 **5. Finally I created a "\_posts" folder and my first post (this one) with the name "2019-08-24-simonhowlader.github.io-jekyll-github-pages.markdown".**
+
 Jekyll uses the naming convention "YYYY-MM-DD-title-of-my-post.md" to generate the permalink and sort posts.
