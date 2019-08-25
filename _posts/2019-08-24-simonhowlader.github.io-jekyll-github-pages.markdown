@@ -55,17 +55,20 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
 ```
+
 3. Next I created an index.md file with the following piece of code
+
 ``` YAML
 ---
 layout: home
 ---
 ```
+
 > GitHub Pages requires an index.html file in order to know that the repository is meant to be hosted as a website. Jekyll will convert the index.md file into index.html file after processing it through the "home" layout of the minima theme.
 
 4. I then created an about page by creating a file named about.md.
 > Jekyll converts markdown files to html files through the use of kramdown.
 
-5. Finally I created a "\_posts" folder to create my first post (this one).
+5. Finally I created a "\_posts" folder and my first post (this one) with the name "2019-08-24-simonhowlader.github.io-jekyll-github-pages.markdown".
 > Jekyll uses the naming convention, YYYY-MM-DD-title-of-my-post.md, to generate the permalink and sort your posts.
 This post is named "2019-08-24-simonhowlader.github.io-jekyll-github-pages.markdown"
