@@ -34,10 +34,10 @@ I've used WordPress and Ghost CMS for a couple of other projects. They both have
 GitHub Pages officially supports Jekyll and also builds + deploys it on their servers so I'm going to be using that as well. I used Jekyll a few years ago so I'm familiar with the file structure, so all I need is some boilerplate code to get started and customize later. GitHub Pages supports Jekyll, markdown, and sass preprocessing. Their servers are reliable, and relatively quick to serve content. I can also edit and write posts through a browser. And of course it's all version controlled. After I have something like 30 posts I will work on the look of the website but now something minimalist with Syntax highlighting would be sufficient. When the blog has more content I will probably be more inclined to create a more personalized design. Until then, content is priority. When I need to do more complex development work I can pull the github repository and work on it locally with a local Jekyll install.
 
 ## Build steps:
-1. First I made a GitHub repository and named it simonhowlader.github.io
+\1. First I made a GitHub repository and named it simonhowlader.github.io
 > Naming a repository with your username followed by .github.io tells GitHub to process the respository through Jekyll and host it on GitHub pages
 
-2. Next I created a "\_config.yaml" file in the root directory and set a theme variable to "minima"
+\2. Next I created a "\_config.yaml" file in the root directory and set a theme variable to "minima"
 > Minima is Jekyll's default theme. I like the minimalist design and it seems to almost exactly what I wanted my blog too look like. I will change the look of the website in the future, but for now this is sufficient. Since the theme is set to minima, Jekyll uses the default theme files (https://github.com/jekyll/minima). Any files or folders that I create will overwrite the minima files/folders of the same name.
  
 ``` YAML
@@ -56,7 +56,7 @@ plugins:
  - jekyll-seo-tag
 ```
 
-3. Next I created an index.md file with the following piece of code
+\3. Next I created an index.md file with the following piece of code
 
 ``` YAML
 ---
@@ -66,9 +66,9 @@ layout: home
 
 > GitHub Pages requires an index.html file in order to know that the repository is meant to be hosted as a website. Jekyll will convert the index.md file into index.html file after processing it through the "home" layout of the minima theme.
 
-4. I then created an about page by creating a file named about.md.
+\4. I then created an about page by creating a file named about.md.
 > Jekyll converts markdown files to html files through the use of kramdown.
 
-5. Finally I created a "\_posts" folder and my first post (this one) with the name "2019-08-24-simonhowlader.github.io-jekyll-github-pages.markdown".
+\5. Finally I created a "\_posts" folder and my first post (this one) with the name "2019-08-24-simonhowlader.github.io-jekyll-github-pages.markdown".
 > Jekyll uses the naming convention, YYYY-MM-DD-title-of-my-post.md, to generate the permalink and sort your posts.
 This post is named "2019-08-24-simonhowlader.github.io-jekyll-github-pages.markdown"
